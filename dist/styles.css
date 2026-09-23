@@ -338,7 +338,91 @@ h3 {
 .project-card ul {
   display: grid;
   gap: 8px;
-  margin: auto 0 0;
+  margin: 20px 0 0;
+  padding-left: 20px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.project-button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.project-button.primary {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--white);
+}
+
+.project-button.secondary {
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.project-card.featured .project-button.primary {
+  border-color: var(--white);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.project-card.featured .project-button.secondary {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: transparent;
+  color: var(--white);
+}
+
+.project-button:hover {
+  transform: translateY(-1px);
+}
+
+.project-detail-shell {
+  min-height: calc(100vh - 160px);
+}
+
+.project-detail-hero {
+  padding: clamp(54px, 9vw, 120px) clamp(20px, 5vw, 64px) clamp(36px, 6vw, 72px);
+  border-bottom: 1px solid var(--line);
+}
+
+.project-detail-hero h1 {
+  max-width: 980px;
+}
+
+.project-detail-content {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.5fr) minmax(0, 1fr);
+  gap: clamp(26px, 5vw, 70px);
+}
+
+.project-type {
+  margin-top: 0;
+  color: var(--blue) !important;
+  font-weight: 600;
+}
+
+.detail-points {
+  margin-top: 28px;
+}
+
+.detail-points ul {
+  display: grid;
+  gap: 10px;
   padding-left: 20px;
 }
 
@@ -426,7 +510,8 @@ h3 {
   .hero,
   .split,
   .section-heading,
-  .contact {
+  .contact,
+  .project-detail-content {
     grid-template-columns: 1fr;
   }
 

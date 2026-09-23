@@ -21,9 +21,10 @@
     if (!grid) return;
 
     grid.innerHTML = data.projects.map((project) => {
-      const link = project.url
-        ? `<a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.action || "View")}</a>`
-        : `<span>${escapeHtml(project.action || "Case study")}</span>`;
+      const slug = project.slug || project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      const externalLink = project.url
+        ? `<a class="project-button secondary" href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.action || "Visit")}</a>`
+        : "";
       const bullets = project.bullets && project.bullets.length
         ? `<ul>${project.bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`
         : "";
@@ -31,11 +32,15 @@
         <article class="project-card ${project.featured ? "featured" : ""}">
           <div class="project-meta">
             <span>${escapeHtml(project.type)}</span>
-            ${link}
+            <span>${project.featured ? "Featured" : "Project"}</span>
           </div>
           <h3>${escapeHtml(project.title)}</h3>
           <p>${escapeHtml(project.description)}</p>
           ${bullets}
+          <div class="project-actions">
+            <a class="project-button primary" href="project.html?project=${escapeHtml(slug)}">View details</a>
+            ${externalLink}
+          </div>
         </article>
       `;
     }).join("");

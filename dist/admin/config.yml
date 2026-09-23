@@ -28,12 +28,18 @@ collections:
             widget: "list"
             summary: "{{fields.title}}"
             fields:
+              - { label: "Slug", name: "slug", widget: "string", hint: "Used in the project detail page URL, for example firstboard-cms" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Type", name: "type", widget: "string" }
               - { label: "URL", name: "url", widget: "string", required: false }
               - { label: "Button Label", name: "action", widget: "string", required: false }
               - { label: "Featured", name: "featured", widget: "boolean", default: false }
               - { label: "Description", name: "description", widget: "text" }
+              - label: "Detail Paragraphs"
+                name: "details"
+                widget: "list"
+                required: false
+                field: { label: "Paragraph", name: "paragraph", widget: "text" }
               - label: "Bullets"
                 name: "bullets"
                 widget: "list"
