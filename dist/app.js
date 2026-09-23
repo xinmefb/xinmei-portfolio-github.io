@@ -1,13 +1,10 @@
 (function () {
-  const storageKey = "xinmeiPortfolioData";
   const defaults = window.PORTFOLIO_DATA || { contact: {}, projects: [] };
 
-  function getData() {
-    try {
-      return JSON.parse(localStorage.getItem(storageKey)) || defaults;
-    } catch {
-      return defaults;
-    }
+  async function getData() {
+    const response = await fetch("content/portfolio.json", { cache: "no-store" });
+    if (!response.ok) return defaults;
+    return response.json();
   }
 
   function escapeHtml(value) {
@@ -57,8 +54,14 @@
     }
   }
 
-  window.XMPortfolio = { storageKey, defaults, getData };
-  const data = getData();
-  renderProjects(data);
-  renderContact(data);
+  window.XMPortfolio = { defaults, getData };
+  getData()
+    .then((data) => {
+      renderProjects(data);
+      renderContact(data);
+    })
+    .catch(() => {
+      renderProjects(defaults);
+      renderContact(defaults);
+    });
 })();

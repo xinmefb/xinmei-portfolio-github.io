@@ -5,6 +5,7 @@ Static portfolio website for Xin Mei.
 ## Pages
 
 - `index.html` - public portfolio
+- `admin/` - GitHub-login CMS powered by Decap CMS
 
 ## GitHub Pages Setup
 
@@ -29,4 +30,6 @@ https://YOUR-GITHUB-USERNAME.github.io/
 
 ## Content Updates
 
-Update `data.js` and redeploy to change project details, contact information, or resume links.
+Portfolio content lives in `content/portfolio.json`.
+
+The CMS at `/admin/` uses Decap CMS with the GitHub backend. The admin UI is not linked from the public header. Editing requires GitHub authentication and push access to this repository.
