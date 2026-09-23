@@ -5,7 +5,6 @@ Static portfolio website for Xin Mei.
 ## Pages
 
 - `index.html` - public portfolio
-- `admin.html` - browser-based content editor
 
 ## GitHub Pages Setup
 
@@ -28,6 +27,6 @@ If the repository is named exactly `YOUR-GITHUB-USERNAME.github.io`, the site wi
 https://YOUR-GITHUB-USERNAME.github.io/
 ```
 
-## CMS Note
+## Content Updates
 
-The CMS page stores edits in the browser using local storage and can export JSON. To make edits update the public site for every visitor, connect a backend CMS or update `data.js` and redeploy.
+Update `data.js` and redeploy to change project details, contact information, or resume links.

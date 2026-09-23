@@ -51,7 +51,7 @@ a {
   align-items: center;
   gap: 10px;
   color: var(--ink);
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -74,7 +74,7 @@ a {
   gap: clamp(12px, 2.2vw, 28px);
   color: var(--ink-soft);
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .nav a {
@@ -92,7 +92,7 @@ a {
   background: transparent;
   color: inherit;
   font: inherit;
-  font-weight: 700;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ a {
   margin: 0 0 14px;
   color: var(--blue);
   font-size: 0.82rem;
-  font-weight: 850;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -130,21 +130,24 @@ p {
 h1 {
   margin: 0;
   max-width: 760px;
-  font-size: clamp(2.8rem, 6vw, 6.7rem);
-  line-height: 0.93;
+  font-size: clamp(2.35rem, 4.8vw, 5.25rem);
+  font-weight: 600;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 h2 {
   margin: 0;
-  font-size: clamp(2rem, 4vw, 4.2rem);
-  line-height: 1;
+  font-size: clamp(1.85rem, 3.4vw, 3.5rem);
+  font-weight: 600;
+  line-height: 1.06;
   letter-spacing: 0;
 }
 
 h3 {
   margin: 0;
   font-size: 1.18rem;
+  font-weight: 600;
   line-height: 1.25;
 }
 
@@ -170,7 +173,7 @@ h3 {
   border: 1px solid var(--ink);
   border-radius: 8px;
   padding: 12px 18px;
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -261,7 +264,7 @@ h3 {
   display: inline-flex;
   margin-bottom: 36px;
   color: var(--teal);
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .capabilities p,
@@ -312,7 +315,7 @@ h3 {
   margin-bottom: 34px;
   color: var(--blue);
   font-size: 0.82rem;
-  font-weight: 850;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -383,7 +386,7 @@ h3 {
   margin-top: 14px;
   color: var(--white);
   font-size: 0.9rem;
-  font-weight: 850;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -395,7 +398,7 @@ h3 {
   display: block;
   color: var(--white);
   font-size: clamp(1.05rem, 2vw, 1.35rem);
-  font-weight: 800;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -416,7 +419,7 @@ h3 {
 .footer a {
   color: var(--white);
   text-decoration: none;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 @media (max-width: 980px) {
@@ -463,7 +466,7 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.5rem, 14vw, 4.4rem);
+    font-size: clamp(2.2rem, 11vw, 3.6rem);
   }
 
   .hero-visual {
