@@ -6,118 +6,124 @@
   },
   "projects": [
     {
-      "slug": "firstboard-website",
-      "title": "Firstboard Website | Regional OOH Advertising Platform",
-      "type": "Website + CMS",
-      "url": "https://firstboard.com/my/en",
-      "action": "Visit site",
-      "featured": true,
-      "description": "A regional platform that helps advertisers discover outdoor media and plan billboard campaigns across Southeast Asia.",
       "details": [
         "This project presents Firstboard as a regional outdoor advertising platform for advertisers exploring billboard opportunities.",
         "The portfolio angle can focus on website structure, campaign-facing content, CMS workflow, and how media inventory information is organized.",
         "It shows experience working with public-facing product communication for outdoor media and billboard campaign planning."
       ],
+      "slug": "firstboard-website",
+      "detailPage": "projects/firstboard-website.html",
+      "featured": true,
+      "url": "https://firstboard.com/my/en",
       "bullets": [
         "Website and CMS structure",
         "Outdoor advertising content",
         "Regional campaign presentation"
-      ]
+      ],
+      "action": "Visit site",
+      "title": "Firstboard Website | Regional OOH Advertising Platform",
+      "type": "Website + CMS",
+      "description": "A regional platform that helps advertisers discover outdoor media and plan billboard campaigns across Southeast Asia."
     },
     {
-      "slug": "land-market",
-      "title": "Land Market",
-      "type": "Land Selling Website (Prototype)",
-      "url": "https://www.figma.com/proto/5pcX2IBtFnkQE6g6nVtWzw/Firstboard?node-id=1310-111&viewport=-3723%2C-1181%2C0.14&t=vIAVn7ntulEcQkoV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1310%3A111&show-proto-sidebar=1&page-id=1219%3A42",
-      "action": "View prototype",
-      "featured": true,
-      "description": "A platform for exploring land listings and connecting interested buyers with sellers.",
       "details": [
         "Land Market is a Figma prototype for a land selling website that helps visitors explore land listings and understand enquiry steps.",
         "The design focuses on information clarity, property browsing, and helping interested buyers move from discovery to contact.",
         "As a portfolio piece, it demonstrates page planning, user journey thinking, and prototype design for a property-focused platform."
       ],
+      "slug": "land-market",
+      "detailPage": "projects/land-market.html",
+      "featured": false,
+      "url": "https://www.figma.com/proto/5pcX2IBtFnkQE6g6nVtWzw/Firstboard?node-id=1310-111&viewport=-3723%2C-1181%2C0.14&t=vIAVn7ntulEcQkoV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1310%3A111&show-proto-sidebar=1&page-id=1219%3A42",
       "bullets": [
         "Land listing browsing flow",
         "Buyer and seller connection journey",
         "Figma prototype design"
-      ]
+      ],
+      "action": "View prototype",
+      "title": "Land Market",
+      "type": "Land Selling Website (Prototype)",
+      "description": "A platform for exploring land listings and connecting interested buyers with sellers."
     },
     {
-      "slug": "kolam-keli-sayang",
-      "title": "KolamKeliSayang.com.my",
-      "type": "Online Booking Platform",
-      "url": "https://kolamkelisayang.com.my",
-      "action": "Visit site",
-      "featured": true,
-      "description": "A fishing competition website where participants can book spots and follow live rankings and results.",
       "details": [
         "KolamKeliSayang.com.my supports a fishing competition experience with booking, participant-facing information, and result visibility.",
         "The project can be presented around user flows for booking, event information, live ranking awareness, and mobile-friendly access.",
         "It shows practical website work for a local business and event-based audience."
       ],
+      "slug": "kolam-keli-sayang",
+      "detailPage": "projects/kolam-keli-sayang.html",
+      "featured": false,
+      "url": "https://kolamkelisayang.com.my",
       "bullets": [
         "Online booking flow",
         "Competition information structure",
         "Live ranking and result presentation"
-      ]
+      ],
+      "action": "Visit site",
+      "title": "KolamKeliSayang.com.my",
+      "type": "Online Booking Platform",
+      "description": "A fishing competition website where participants can book spots and follow live rankings and results."
     },
     {
-      "slug": "toutdoor",
-      "title": "T-Outdoor Website Development",
-      "type": "Outdoor Media Website",
-      "url": "https://toutdoor.com.my",
-      "action": "Visit site",
-      "featured": false,
-      "description": "A responsive company website showcasing outdoor inventories and helping potential clients get in touch.",
       "details": [
         "T-Outdoor is an outdoor media website focused on presenting company information and advertising inventory clearly.",
         "The project can highlight responsive website development, service presentation, and enquiry-focused content.",
         "It fits naturally with your portfolio story around outdoor media and campaign communication."
       ],
+      "slug": "toutdoor",
+      "detailPage": "projects/toutdoor.html",
+      "featured": false,
+      "url": "https://toutdoor.com.my",
       "bullets": [
         "Responsive website structure",
         "Outdoor inventory presentation",
         "Client enquiry path"
-      ]
+      ],
+      "action": "Visit site",
+      "title": "T-Outdoor Website Development",
+      "type": "Outdoor Media Website",
+      "description": "A responsive company website showcasing outdoor inventories and helping potential clients get in touch."
     },
     {
-      "slug": "riseasia",
-      "title": "RiseAsia.co",
-      "type": "WordPress Site",
-      "url": "https://riseasia.co",
-      "action": "Visit site",
-      "featured": false,
-      "description": "A digital publication covering business, economic growth, and innovation across Asia.",
       "details": [
         "RiseAsia.co is a WordPress-based digital publication for business, economic growth, and innovation topics across Asia.",
         "The portfolio angle can focus on content organization, publishing workflows, responsive page structure, and editorial site maintenance.",
         "It demonstrates experience with content-heavy websites and professional publishing needs."
       ],
+      "slug": "riseasia",
+      "detailPage": "projects/riseasia.html",
+      "featured": false,
+      "url": "https://riseasia.co",
       "bullets": [
         "WordPress content structure",
         "Editorial website workflow",
         "Regional publication presentation"
-      ]
+      ],
+      "action": "Visit site",
+      "title": "RiseAsia.co",
+      "type": "WordPress Site",
+      "description": "A digital publication covering business, economic growth, and innovation across Asia."
     },
     {
-      "slug": "internal-billboard-update-app",
-      "title": "Internal Billboard Update App",
-      "type": "Private product design",
-      "url": "",
-      "action": "Private project",
-      "featured": false,
-      "description": "An internal platform for managing billboard information and collecting site photos from field teams.",
       "details": [
         "This private internal product should be presented as anonymised workflow and product design instead of raw company data.",
         "Strong portfolio sections could include dashboard flows, billboard information states, field photo submission, task updates, and approval steps.",
         "The value is in showing how the tool supports coordination between office users, billboard operations, and field teams."
       ],
+      "slug": "internal-billboard-update-app",
+      "detailPage": "projects/internal-billboard-update-app.html",
+      "featured": false,
+      "url": "",
       "bullets": [
         "Billboard information management",
         "Field photo collection workflow",
         "Internal operations visibility"
-      ]
+      ],
+      "action": "Private project",
+      "title": "Internal Billboard Update App",
+      "type": "Private product design",
+      "description": "An internal platform for managing billboard information and collecting site photos from field teams."
     }
   ]
 }

@@ -22,6 +22,7 @@
 
     grid.innerHTML = data.projects.map((project) => {
       const slug = project.slug || project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      const detailHref = project.detailPage || `project.html?project=${slug}`;
       const externalLink = project.url
         ? `<a class="project-button secondary" href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.action || "Visit")}</a>`
         : "";
@@ -38,7 +39,7 @@
           <p>${escapeHtml(project.description)}</p>
           ${bullets}
           <div class="project-actions">
-            <a class="project-button primary" href="project.html?project=${escapeHtml(slug)}">View details</a>
+            <a class="project-button primary" href="${escapeHtml(detailHref)}">View details</a>
             ${externalLink}
           </div>
         </article>

@@ -31,6 +31,7 @@ collections:
               - { label: "Slug", name: "slug", widget: "string", hint: "Used in the project detail page URL, for example firstboard-cms" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Type", name: "type", widget: "string" }
+              - { label: "Custom Detail Page Path", name: "detailPage", widget: "string", required: false, hint: "Example: projects/land-market.html. Leave empty to use the simple generated detail page." }
               - { label: "URL", name: "url", widget: "string", required: false }
               - { label: "Button Label", name: "action", widget: "string", required: false }
               - { label: "Featured", name: "featured", widget: "boolean", default: false }

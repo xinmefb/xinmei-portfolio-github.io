@@ -12,6 +12,7 @@
         "It shows experience working with public-facing product communication for outdoor media and billboard campaign planning."
       ],
       "slug": "firstboard-website",
+      "detailPage": "projects/firstboard-website.html",
       "featured": true,
       "url": "https://firstboard.com/my/en",
       "bullets": [
@@ -31,6 +32,7 @@
         "As a portfolio piece, it demonstrates page planning, user journey thinking, and prototype design for a property-focused platform."
       ],
       "slug": "land-market",
+      "detailPage": "projects/land-market.html",
       "featured": false,
       "url": "https://www.figma.com/proto/5pcX2IBtFnkQE6g6nVtWzw/Firstboard?node-id=1310-111&viewport=-3723%2C-1181%2C0.14&t=vIAVn7ntulEcQkoV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1310%3A111&show-proto-sidebar=1&page-id=1219%3A42",
       "bullets": [
@@ -50,6 +52,7 @@
         "It shows practical website work for a local business and event-based audience."
       ],
       "slug": "kolam-keli-sayang",
+      "detailPage": "projects/kolam-keli-sayang.html",
       "featured": false,
       "url": "https://kolamkelisayang.com.my",
       "bullets": [
@@ -69,6 +72,7 @@
         "It fits naturally with your portfolio story around outdoor media and campaign communication."
       ],
       "slug": "toutdoor",
+      "detailPage": "projects/toutdoor.html",
       "featured": false,
       "url": "https://toutdoor.com.my",
       "bullets": [
@@ -88,6 +92,7 @@
         "It demonstrates experience with content-heavy websites and professional publishing needs."
       ],
       "slug": "riseasia",
+      "detailPage": "projects/riseasia.html",
       "featured": false,
       "url": "https://riseasia.co",
       "bullets": [
@@ -107,6 +112,7 @@
         "The value is in showing how the tool supports coordination between office users, billboard operations, and field teams."
       ],
       "slug": "internal-billboard-update-app",
+      "detailPage": "projects/internal-billboard-update-app.html",
       "featured": false,
       "url": "",
       "bullets": [

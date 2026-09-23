@@ -43,9 +43,13 @@ if errorlevel 8 goto build_failed
 robocopy "content" "dist\content" /MIR /NFL /NDL /NJH /NJS /NP >nul
 if errorlevel 8 goto build_failed
 
+robocopy "projects" "dist\projects" /MIR /NFL /NDL /NJH /NJS /NP >nul
+if errorlevel 8 goto build_failed
+
 copy /Y "index.html" "dist\index.html" >nul
 copy /Y "project.html" "dist\project.html" >nul
 copy /Y "app.js" "dist\app.js" >nul
+copy /Y "case-study.js" "dist\case-study.js" >nul
 copy /Y "project.js" "dist\project.js" >nul
 copy /Y "styles.css" "dist\styles.css" >nul
 

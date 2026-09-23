@@ -34,6 +34,8 @@ Portfolio content lives in `content/portfolio.json`.
 
 The CMS at `/admin/` uses Decap CMS with Decap Turbo GitHub login. The admin UI is not linked from the public header. Editing requires access to the Decap Turbo site and GitHub repository connection.
 
+Project cards can link to custom case study pages using the `detailPage` field in `content/portfolio.json`. Rich, image-heavy, or interactive case studies live in `projects/*.html`; duplicate one of those files when creating a new fully custom project page.
+
 ## Firebase Hosting
 
 This project is deployed on Firebase Hosting:
