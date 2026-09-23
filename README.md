@@ -48,3 +48,5 @@ npx firebase-tools deploy --only hosting
 ```
 
 Do not configure it as a single-page app; this site uses normal static pages.
+
+On Windows, you can also double-click `deploy-firebase.bat` to copy the latest site files into `dist/` and deploy to Firebase Hosting automatically.
