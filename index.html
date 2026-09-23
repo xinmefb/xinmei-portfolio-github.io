@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Xin Mei | Digital Product Portfolio</title>
     <meta name="description" content="Portfolio of Xin Mei, featuring websites, CMS platforms, digital billboard products, and internal operations apps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="preload" href="assets/portfolio-hero.png" as="image">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23071013'/%3E%3Cpath d='M14 18h36v18H14z' fill='%2312b8b5'/%3E%3Cpath d='M18 22h28v10H18z' fill='%23f7fbfb'/%3E%3Cpath d='M17 44h30M24 36v8M40 36v8' stroke='%23ffb34d' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -20,13 +23,14 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
+        <a href="admin.html">CMS</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Websites, CMS, digital billboards, internal tools</p>
+          <p class="eyebrow">Websites, CMS, property, digital billboards</p>
           <h1 id="hero-title">Digital product work that keeps content and operations moving.</h1>
           <p class="hero-text">
             I’m Xin Mei. I work across public websites, CMS platforms, digital billboard products,
@@ -83,83 +87,27 @@
           <h2>Projects across media, CMS, and business operations.</h2>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-meta">
-              <span>Website + CMS</span>
-              <span>Featured</span>
-            </div>
-            <h3>Firstboard Website and CMS</h3>
-            <p>
-              A website and content management system supporting digital billboard content,
-              online updates, and operational publishing needs.
-            </p>
-            <ul>
-              <li>CMS structure and content workflows</li>
-              <li>Public website presentation</li>
-              <li>Admin usability and update process</li>
-            </ul>
-          </article>
+        <div id="project-grid" class="project-grid"></div>
+      </section>
 
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Public website</span>
-              <a href="https://risemalaysia.com.my" target="_blank" rel="noreferrer">Visit</a>
-            </div>
-            <h3>RiseMalaysia.com.my</h3>
-            <p>
-              A Malaysian-facing web platform focused on audience engagement, content visibility,
-              and a clear public brand presence.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Regional website</span>
-              <a href="https://riseasia.co" target="_blank" rel="noreferrer">Visit</a>
-            </div>
-            <h3>RiseAsia.co</h3>
-            <p>
-              A regional digital presence shaped around corporate communication, structured content,
-              and scalable multi-page information.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Advertising platform</span>
-              <a href="https://digitalbillboard.com" target="_blank" rel="noreferrer">Visit</a>
-            </div>
-            <h3>DigitalBillboard.com</h3>
-            <p>
-              A digital billboard platform presenting advertising visibility, campaign opportunities,
-              and media-related information for potential customers.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Business website</span>
-              <a href="https://kolamkelisayang.com.my" target="_blank" rel="noreferrer">Visit</a>
-            </div>
-            <h3>KolamKeliSayang.com.my</h3>
-            <p>
-              A focused local business website that presents services and customer-facing information
-              in a simple, accessible structure.
-            </p>
-          </article>
-
-          <article class="project-card">
-            <div class="project-meta">
-              <span>Internal app</span>
-              <span>Operations</span>
-            </div>
-            <h3>Billboard Runner App</h3>
-            <p>
-              An internal application supporting runner workflows, billboard operations,
-              field coordination, and task visibility for daily execution.
-            </p>
-          </article>
+      <section class="section internal-work">
+        <div class="section-heading">
+          <p class="section-label">Internal portfolio</p>
+          <h2>How I present CMS and internal app design.</h2>
+        </div>
+        <div class="timeline">
+          <div>
+            <h3>Show the workflow, not private data</h3>
+            <p>Use anonymised screens, wireframes, or recreated flows to explain what the CMS helps users publish, approve, schedule, or track.</p>
+          </div>
+          <div>
+            <h3>Describe the product thinking</h3>
+            <p>Frame each internal project around the user problem, your role, the modules designed, and the operational result.</p>
+          </div>
+          <div>
+            <h3>Group it as product design</h3>
+            <p>For private CMS work, use case studies such as dashboard design, content management, campaign setup, permission flow, and reporting.</p>
+          </div>
         </div>
       </section>
 
@@ -193,8 +141,11 @@
           </p>
         </div>
         <div class="contact-card">
-          <strong>Email, LinkedIn, and resume link</strong>
-          <p>Add your preferred contact details here when you are ready to share the portfolio.</p>
+          <strong>Email</strong>
+          <a id="contact-email" href="mailto:xinmei6999@gmail.com">xinmei6999@gmail.com</a>
+          <strong>Phone</strong>
+          <a id="contact-phone" href="tel:+60172097727">0172097727</a>
+          <p>Resume link can be added later through the CMS page.</p>
         </div>
       </section>
     </main>
@@ -203,5 +154,7 @@
       <p>© 2026 Xin Mei. Digital product portfolio.</p>
       <a href="#top">Back to top</a>
     </footer>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
