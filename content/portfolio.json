@@ -6,12 +6,12 @@
   },
   "projects": [
     {
-      "title": "Firstboard Land Selling Website",
+      "title": "Land Selling Website",
       "type": "Property website prototype",
       "url": "https://www.figma.com/proto/5pcX2IBtFnkQE6g6nVtWzw/Firstboard?node-id=1310-111&viewport=-3723%2C-1181%2C0.14&t=vIAVn7ntulEcQkoV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1310%3A111&show-proto-sidebar=1&page-id=1219%3A42",
       "action": "View prototype",
       "featured": true,
-      "description": "A Figma prototype for a land selling website, focused on presenting property information clearly and guiding visitors through enquiry-focused page content.",
+      "description": "A Figma prototype for a land selling website, focused on presenting property information clearly and guiding visitors through enquiry-focused page content. ",
       "bullets": [
         "Landing page structure",
         "Property information flow",
@@ -19,41 +19,41 @@
       ]
     },
     {
-      "title": "Firstboard Website and CMS",
-      "type": "Website + CMS",
-      "url": "",
+      "title": "Firstboard Website | Regional OOH Advertising Platform",
+      "type": "Website + CMS ",
+      "url": "firstboard.com/my/en",
       "action": "Case study",
       "featured": true,
-      "description": "A website and content management system supporting digital billboard content, online updates, and operational publishing needs.",
+      "description": "Website helps advertisers discover billboard and digital out-of-home media across Southeast Asia and connect with the team to plan campaigns. I coordinated website improvements across country teams, developers, and content writers, translating business needs into clear requirements and testing new features before release. My work also covered content planning, SEO, media listing accuracy, and lead generation, with a focus on making it easier for advertisers to find suitable locations and submit enquiries.",
       "bullets": [
-        "CMS structure and content workflows",
-        "Public website presentation",
-        "Admin usability and update process"
+        "Internal Proposal Planning",
+        "Client Campaign Tracking",
+        "Media Inventory Management"
       ]
     },
     {
       "title": "RiseAsia.co",
-      "type": "Regional website",
+      "type": "WordPress Site",
       "url": "https://riseasia.co",
-      "action": "Visit",
+      "action": "Visit site",
       "featured": false,
-      "description": "A regional digital presence shaped around corporate communication, structured content, and scalable multi-page information.",
+      "description": "A media, intelligence, and community platform decoding how people across Asia.",
       "bullets": []
     },
     {
-      "title": "Toutdoor.com.my",
+      "title": "T-Outdoor Website Development",
       "type": "Outdoor media website",
       "url": "https://toutdoor.com.my",
-      "action": "Visit",
+      "action": "Visit site",
       "featured": false,
-      "description": "A public website for outdoor media and advertising communication, presenting services and campaign-facing information.",
+      "description": "I developed and deployed a responsive website redesign for T-Outdoor, a Malaysian outdoor advertising company. I built the Home, About, and Contact pages, organised the site’s content and visual assets, and implemented an enquiry form. I tested the site on a staging subdomain before its planned move to the main website, with a focus on making T-Outdoor’s services clear and helping potential clients get in touch.",
       "bullets": []
     },
     {
       "title": "KolamKeliSayang.com.my",
-      "type": "Business website",
+      "type": "Online Booking Platform",
       "url": "https://kolamkelisayang.com.my",
-      "action": "Visit",
+      "action": "Visit site",
       "featured": false,
       "description": "A focused local business website that presents services and customer-facing information in a simple, accessible structure.",
       "bullets": []
