@@ -33,3 +33,18 @@ https://YOUR-GITHUB-USERNAME.github.io/
 Portfolio content lives in `content/portfolio.json`.
 
 The CMS at `/admin/` uses Decap CMS with Decap Turbo GitHub login. The admin UI is not linked from the public header. Editing requires access to the Decap Turbo site and GitHub repository connection.
+
+## Firebase Hosting
+
+This project is deployed on Firebase Hosting:
+
+https://xin-mei-s-portfolio.web.app
+
+The deployable site is served from `dist/`.
+
+```powershell
+npx firebase-tools login
+npx firebase-tools deploy --only hosting
+```
+
+Do not configure it as a single-page app; this site uses normal static pages.
