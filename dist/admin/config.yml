@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: xinmefb/xinmei-portfolio-github.io
+  name: turbo-github
+  turbo_site_id: 6d77c4d2-e204-46c2-98cc-8147b80b7b68
   branch: main
 
 publish_mode: simple

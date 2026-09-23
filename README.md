@@ -32,4 +32,4 @@ https://YOUR-GITHUB-USERNAME.github.io/
 
 Portfolio content lives in `content/portfolio.json`.
 
-The CMS at `/admin/` uses Decap CMS with the GitHub backend. The admin UI is not linked from the public header. Editing requires GitHub authentication and push access to this repository.
+The CMS at `/admin/` uses Decap CMS with Decap Turbo GitHub login. The admin UI is not linked from the public header. Editing requires access to the Decap Turbo site and GitHub repository connection.
