@@ -156,6 +156,8 @@ a {
 }
 
 .hero {
+  position: relative;
+  isolation: isolate;
   display: grid;
   grid-template-columns: minmax(280px, 0.74fr) minmax(0, 1fr);
   gap: clamp(28px, 6vw, 92px);
@@ -166,11 +168,167 @@ a {
     radial-gradient(circle at 18% 26%, rgba(92, 124, 137, 0.28), transparent 24rem),
     linear-gradient(180deg, rgba(31, 73, 89, 0.94), rgba(1, 26, 40, 0.96));
   color: #ffffff;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+}
+
+.hero::before {
+  inset: clamp(44px, 8vw, 96px) 7% auto auto;
+  width: min(520px, 44vw);
+  aspect-ratio: 1.15;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px 999px 10px 10px;
+  background:
+    radial-gradient(circle at 50% 8%, rgba(255, 255, 255, 0.2), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(92, 124, 137, 0.06)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px) 0 0 / 68px 68px,
+    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px) 0 0 / 68px 68px;
+  box-shadow:
+    inset 0 0 90px rgba(255, 255, 255, 0.09),
+    0 50px 120px rgba(1, 26, 40, 0.22);
+  opacity: 0.9;
+}
+
+.hero::after {
+  inset: 18% -4% auto auto;
+  width: min(680px, 52vw);
+  height: min(360px, 32vw);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 18% 55%, rgba(255, 255, 255, 0.34) 0 3px, transparent 4px),
+    radial-gradient(circle at 34% 35%, rgba(255, 255, 255, 0.22) 0 2px, transparent 3px),
+    radial-gradient(circle at 52% 70%, rgba(255, 255, 255, 0.28) 0 3px, transparent 4px),
+    radial-gradient(circle at 70% 38%, rgba(255, 255, 255, 0.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 84% 58%, rgba(255, 255, 255, 0.24) 0 3px, transparent 4px),
+    linear-gradient(135deg, rgba(92, 124, 137, 0.42), rgba(1, 26, 40, 0.08));
+  filter: blur(0.2px);
+  opacity: 0.88;
+}
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-pattern span {
+  position: absolute;
+  display: block;
+}
+
+.pattern-arch {
+  top: clamp(32px, 7vw, 84px);
+  right: clamp(24px, 7vw, 110px);
+  width: min(450px, 36vw);
+  height: min(560px, 58vh);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px 999px 8px 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(92, 124, 137, 0.04)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.16) 1px, transparent 1px) 0 0 / 58px 58px;
+  box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.08);
+}
+
+.pattern-grid {
+  top: 30%;
+  right: 4%;
+  width: min(420px, 34vw);
+  height: 240px;
+  border-radius: 999px;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.38) 0 2px, transparent 3px) 0 0 / 34px 34px,
+    linear-gradient(135deg, rgba(92, 124, 137, 0.26), rgba(1, 26, 40, 0));
+  opacity: 0.75;
+}
+
+.pattern-chip {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 70px rgba(1, 26, 40, 0.16);
+  animation: float-pattern 8s ease-in-out infinite;
+}
+
+.pattern-chip-a {
+  top: 18%;
+  right: 23%;
+  width: 92px;
+  height: 132px;
+  border-radius: 999px 999px 8px 8px;
+  transform: rotate(10deg);
+}
+
+.pattern-chip-b {
+  right: 12%;
+  bottom: 18%;
+  width: 170px;
+  height: 58px;
+  border-radius: 999px;
+  transform: rotate(-7deg);
+  animation-delay: -3s;
+}
+
+.pattern-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+.pattern-dot-a {
+  top: 23%;
+  right: 9%;
+}
+
+.pattern-dot-b {
+  right: 31%;
+  bottom: 26%;
 }
 
 .hero-portrait {
   position: relative;
+  z-index: 1;
   width: min(380px, 100%);
+}
+
+.hero-portrait::before,
+.hero-portrait::after {
+  position: absolute;
+  z-index: -1;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 24px 70px rgba(1, 26, 40, 0.18);
+  content: "";
+  pointer-events: none;
+}
+
+.hero-portrait::before {
+  right: -34px;
+  top: 10%;
+  width: 112px;
+  height: 160px;
+  border-radius: 999px 999px 8px 8px;
+  transform: rotate(8deg);
+  animation: float-pattern 8s ease-in-out infinite;
+}
+
+.hero-portrait::after {
+  left: -26px;
+  bottom: -34px;
+  width: 150px;
+  height: 92px;
+  border-radius: 999px;
+  transform: rotate(-12deg);
+  animation: float-pattern 9s ease-in-out infinite reverse;
 }
 
 .portrait-ring {
@@ -213,7 +371,51 @@ a {
 }
 
 .hero-copy {
+  position: relative;
+  z-index: 1;
   max-width: 790px;
+}
+
+.hero-copy::before,
+.hero-copy::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+}
+
+.hero-copy::before {
+  top: -42px;
+  right: 8%;
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(92, 124, 137, 0.08));
+  transform: rotate(18deg);
+  animation: float-pattern 7s ease-in-out infinite;
+}
+
+.hero-copy::after {
+  right: 34%;
+  bottom: -68px;
+  width: 210px;
+  height: 58px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  transform: rotate(-5deg);
+}
+
+@keyframes float-pattern {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -12px;
+  }
 }
 
 .role-pill,
@@ -877,6 +1079,43 @@ h3 {
   .project-card.featured {
     grid-column: span 2;
   }
+
+  .hero::before {
+    inset: 38px -10% auto auto;
+    width: min(460px, 74vw);
+    opacity: 0.78;
+  }
+
+  .hero::after {
+    inset: 18% -10% auto auto;
+    width: min(540px, 82vw);
+    height: 260px;
+    opacity: 0.72;
+  }
+
+  .hero-copy::before {
+    right: 2%;
+    width: 86px;
+    height: 86px;
+    opacity: 0.55;
+  }
+
+  .pattern-arch {
+    right: -6%;
+    width: 330px;
+    height: 470px;
+  }
+
+  .pattern-grid {
+    top: 24%;
+    right: -7%;
+    width: 330px;
+    height: 230px;
+  }
+
+  .pattern-chip-a {
+    right: 16%;
+  }
 }
 
 @media (max-width: 680px) {
@@ -902,6 +1141,69 @@ h3 {
   .hero {
     gap: 22px;
     padding-top: 28px;
+  }
+
+  .hero::before {
+    inset: 72px -17% auto auto;
+    width: 360px;
+    opacity: 0.86;
+  }
+
+  .hero::after {
+    display: block;
+    inset: 210px -18% auto auto;
+    width: 380px;
+    height: 210px;
+    opacity: 0.76;
+  }
+
+  .pattern-arch {
+    top: 54px;
+    right: -18px;
+    width: 260px;
+    height: 420px;
+    opacity: 0.86;
+  }
+
+  .pattern-grid {
+    top: 150px;
+    right: -18px;
+    width: 280px;
+    height: 230px;
+    opacity: 0.82;
+  }
+
+  .pattern-chip-a {
+    top: 92px;
+    right: 26px;
+    width: 64px;
+    height: 94px;
+    opacity: 0.9;
+  }
+
+  .pattern-chip-b {
+    right: 34px;
+    bottom: auto;
+    top: 380px;
+    width: 128px;
+    height: 46px;
+    opacity: 0.9;
+  }
+
+  .pattern-dot-a {
+    top: 138px;
+    right: 185px;
+  }
+
+  .pattern-dot-b {
+    top: 334px;
+    right: 92px;
+  }
+
+  .hero-copy::before,
+  .hero-copy::after,
+  .hero-portrait::before {
+    display: none;
   }
 
   .hero-portrait {
