@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   min-height: 100vh;
   background:
@@ -51,6 +52,20 @@ body {
   font-size: 16px;
   line-height: 1.6;
   transition: background-color 180ms ease, color 180ms ease;
+}
+
+body::before {
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255, 122, 182, 0.16), transparent 26rem),
+    radial-gradient(circle at 86% 18%, rgba(84, 143, 255, 0.16), transparent 30rem),
+    radial-gradient(circle at 52% 88%, rgba(87, 255, 201, 0.13), transparent 28rem);
+  filter: blur(28px);
+  animation: aurora-drift 16s ease-in-out infinite alternate;
+  content: "";
+  pointer-events: none;
 }
 
 a {
@@ -567,8 +582,9 @@ h3 {
 .contact-form {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: color-mix(in srgb, var(--white) 94%, transparent);
+  background: color-mix(in srgb, var(--white) 82%, transparent);
   box-shadow: 0 16px 42px rgba(17, 22, 39, 0.07);
+  backdrop-filter: blur(16px) saturate(135%);
 }
 
 .project-card {
@@ -1507,6 +1523,7 @@ h3 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  body::before,
   .firstboard-page main::before,
   .homepage-tools::before,
   .aurora-field,

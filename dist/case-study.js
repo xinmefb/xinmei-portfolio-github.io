@@ -29,6 +29,20 @@
 
   const motionQuery = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
   const reducedMotion = motionQuery && motionQuery.matches;
+  const effectSelectors = [
+    ".case-study-hero > *",
+    ".case-study-layout > *",
+    ".case-study-grid > *",
+    ".case-study-panel",
+    ".image-slot",
+    ".gallery-preview",
+    ".project-detail-content > *"
+  ];
+
+  document.querySelectorAll(effectSelectors.join(",")).forEach((item) => {
+    item.classList.add("reveal-on-scroll");
+  });
+
   const revealItems = document.querySelectorAll(".reveal-on-scroll");
   const parallaxItems = document.querySelectorAll("[data-parallax-speed]");
 

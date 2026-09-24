@@ -43,7 +43,7 @@
         ? `<ul>${project.bullets.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>`
         : "";
       return `
-        <article class="project-card ${project.featured ? "featured" : ""}">
+        <article class="project-card ${project.featured ? "featured" : ""} reveal-on-scroll" data-parallax-speed="0.5">
           <div class="project-meta">
             <span>${escapeHtml(project.type)}</span>
             <span>${project.featured ? "Featured" : "Project"}</span>
@@ -58,6 +58,8 @@
         </article>
       `;
     }).join("");
+
+    if (window.XMReveal) window.XMReveal();
   }
 
   function renderContact(data) {
@@ -110,28 +112,48 @@
   function bindScrollEffects() {
     const motionQuery = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)");
     const reducedMotion = motionQuery && motionQuery.matches;
-    const revealItems = document.querySelectorAll(".reveal-on-scroll");
-    const parallaxItems = document.querySelectorAll("[data-parallax-speed]");
+    const effectSelectors = [
+      ".section-heading",
+      ".skills-layout",
+      ".about-grid article",
+      ".location-section > *",
+      ".map-card",
+      ".contact > *",
+      ".contact-form"
+    ];
 
-    if (!reducedMotion && revealItems.length) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.16 });
+    document.querySelectorAll(effectSelectors.join(",")).forEach((item) => {
+      item.classList.add("reveal-on-scroll");
+    });
 
+    const observer = !reducedMotion && "IntersectionObserver" in window
+      ? new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.16 })
+      : null;
+
+    const observeRevealItems = () => {
+      const revealItems = document.querySelectorAll(".reveal-on-scroll:not(.is-visible)");
+      if (!observer) {
+        revealItems.forEach((item) => item.classList.add("is-visible"));
+        return;
+      }
       revealItems.forEach((item) => observer.observe(item));
-    } else {
-      revealItems.forEach((item) => item.classList.add("is-visible"));
-    }
+    };
 
-    if (reducedMotion || !parallaxItems.length) return;
+    window.XMReveal = observeRevealItems;
+    observeRevealItems();
+
+    if (reducedMotion) return;
 
     let ticking = false;
     const updateParallax = () => {
+      const parallaxItems = document.querySelectorAll("[data-parallax-speed]");
       parallaxItems.forEach((item) => {
         const speed = Number(item.dataset.parallaxSpeed || 0.5);
         const rect = item.getBoundingClientRect();
