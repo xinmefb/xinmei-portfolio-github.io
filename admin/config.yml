@@ -22,6 +22,8 @@ collections:
             fields:
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "WhatsApp Link", name: "whatsapp", widget: "string", required: false }
+              - { label: "LinkedIn Link", name: "linkedin", widget: "string", required: false, hint: "Replace the placeholder with your real LinkedIn profile URL." }
               - { label: "Resume Link", name: "resume", widget: "string", required: false }
           - label: "Projects"
             name: "projects"

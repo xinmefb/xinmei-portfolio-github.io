@@ -63,6 +63,8 @@
   function renderContact(data) {
     const email = document.querySelector("#contact-email");
     const phone = document.querySelector("#contact-phone");
+    const whatsapp = document.querySelector("#contact-whatsapp");
+    const linkedin = document.querySelector("#contact-linkedin");
     if (email && data.contact.email) {
       email.href = `mailto:${data.contact.email}`;
       email.textContent = data.contact.email;
@@ -70,6 +72,12 @@
     if (phone && data.contact.phone) {
       phone.href = `tel:${data.contact.phone.replace(/[^+\d]/g, "")}`;
       phone.textContent = data.contact.phone;
+    }
+    if (whatsapp && data.contact.whatsapp) {
+      whatsapp.href = data.contact.whatsapp;
+    }
+    if (linkedin && data.contact.linkedin) {
+      linkedin.href = data.contact.linkedin;
     }
   }
 
