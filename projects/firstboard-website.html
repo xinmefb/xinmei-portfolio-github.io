@@ -7,10 +7,10 @@
     <meta name="description" content="Firstboard website and CMS case study by Xin Mei.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css?v=firstboard-bento-20260924">
   </head>
-  <body>
+  <body class="case-study-page firstboard-page">
     <header class="site-header">
       <a class="brand" href="../index.html#top" aria-label="Xin Mei portfolio home">
         <span class="brand-mark" aria-hidden="true">XM</span>
@@ -18,43 +18,110 @@
       </a>
       <nav class="nav" aria-label="Project navigation">
         <a href="../index.html#work">Projects</a>
+        <a href="../index.html#tool-stack">Skills</a>
         <a href="../index.html#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <section class="case-study-hero">
-        <div>
-          <p class="case-study-kicker">Website + CMS</p>
+      <section class="case-study-hero firstboard-hero">
+        <div class="aurora-field" aria-hidden="true" data-parallax-speed="0.5"></div>
+        <div class="reveal-on-scroll">
+          <p class="case-study-kicker">Website + CMS + OOH Platform</p>
           <h1>Firstboard Website</h1>
-          <p class="case-study-summary">A regional OOH advertising platform that helps advertisers explore media opportunities and understand campaign options.</p>
-          <div class="case-study-meta">
-            <div><strong>Role</strong><span>Website + CMS support</span></div>
-            <div><strong>Industry</strong><span>Outdoor advertising</span></div>
-            <div><strong>Focus</strong><span>Campaign information</span></div>
+          <p class="case-study-summary">
+            A complete public website experience for billboard advertising in Malaysia, designed to make
+            outdoor media discovery, campaign education, regional navigation, and lead conversion feel clear.
+          </p>
+          <div class="case-study-meta glass-panel">
+            <div><strong>Role</strong><span>Website design and build</span></div>
+            <div><strong>Scope</strong><span>Full website experience</span></div>
+            <div><strong>Focus</strong><span>Search, content, CMS, conversion</span></div>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="https://firstboard.com/my/en" target="_blank" rel="noreferrer">Visit site</a>
+            <a class="button primary" href="https://firstboard.com/my/en" target="_blank" rel="noreferrer">Visit live site</a>
             <a class="button secondary" href="../index.html#work">Back to projects</a>
           </div>
         </div>
-        <div class="image-slot"><span>Add screenshots: homepage, media inventory, CMS update flow.</span></div>
+        <figure class="firstboard-hero-shot glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+          <img src="../assets/firstboard-home-search.png" alt="Firstboard homepage search hero showing billboard advertising in Malaysia">
+        </figure>
       </section>
-      <section class="section case-study-layout">
-        <div><p class="section-label">Overview</p><h2>Making outdoor media easier to understand.</h2></div>
-        <div class="copy-block">
-          <p>This case study can focus on how the public website presents regional billboard advertising, campaign information, and advertiser-facing content.</p>
-          <p>Later, this page can include screenshots, CMS workflow diagrams, and examples of how content is structured for different markets.</p>
+
+      <section class="sticky-tools-section" aria-labelledby="firstboard-tools-title">
+        <div class="sticky-tools-inner glass-panel reveal-on-scroll">
+          <p id="firstboard-tools-title">Design and build stack used across this portfolio.</p>
+          <div class="tool-logo-row" aria-label="Skills and tools">
+            <span>Figma</span>
+            <span>Adobe Photoshop</span>
+            <span>Adobe Illustrator</span>
+            <span>Canva</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Codex</span>
+            <span>Claude Code</span>
+          </div>
         </div>
       </section>
+
+      <section class="section case-study-layout reveal-on-scroll">
+        <div>
+          <p class="section-label">Overview</p>
+          <h2>Turning billboard advertising into a guided digital journey.</h2>
+        </div>
+        <div class="copy-block">
+          <p>
+            The website introduces Firstboard as a media technology platform and gives visitors a clear path
+            from discovery to action: search by location, explore billboard formats, understand the campaign
+            process, compare regions, read education content, and contact the team.
+          </p>
+          <p>
+            The design work balances a bold OOH advertising brand with practical UX patterns: strong page
+            hierarchy, obvious calls to action, reusable content sections, and CMS-friendly structures for
+            campaign and knowledge-base updates.
+          </p>
+        </div>
+      </section>
+
+      <section class="section bento-showcase" aria-labelledby="firstboard-scenes-title">
+        <div class="section-heading reveal-on-scroll">
+          <p class="section-label">Website scenes</p>
+          <h2 id="firstboard-scenes-title">A bento view of the live Firstboard experience.</h2>
+          <p>Selected screens from the website, arranged with contrast in size while keeping consistent gaps and radius.</p>
+        </div>
+
+        <div class="firstboard-bento">
+          <figure class="bento-card bento-large glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+            <img src="../assets/firstboard-home-search.png" alt="Firstboard homepage search and media filter design">
+            <figcaption><strong>Search-first hero</strong><span>Location, country, and media type filters guide advertisers into inventory discovery.</span></figcaption>
+          </figure>
+          <figure class="bento-card bento-tall glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+            <img src="../assets/firstboard-platform-story.png" alt="Firstboard platform story section">
+            <figcaption><strong>Platform story</strong><span>Brand positioning explains how Firstboard connects OOH across Southeast Asia.</span></figcaption>
+          </figure>
+          <figure class="bento-card glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+            <img src="../assets/firstboard-billboard-placements.png" alt="Firstboard high-impact billboard placements section">
+            <figcaption><strong>Billboard placements</strong><span>Featured high-traffic locations help users understand market opportunities quickly.</span></figcaption>
+          </figure>
+          <figure class="bento-card glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+            <img src="../assets/firstboard-campaign-journey.png" alt="Firstboard campaign journey section">
+            <figcaption><strong>Campaign journey</strong><span>A clear process turns outdoor media buying into practical steps.</span></figcaption>
+          </figure>
+          <figure class="bento-card bento-wide glass-panel reveal-on-scroll" data-parallax-speed="0.5">
+            <img src="../assets/firstboard-regional-reach.png" alt="Firstboard Southeast Asia regional reach section">
+            <figcaption><strong>Regional reach</strong><span>Country cards and Southeast Asia content support the wider expansion story.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="section">
         <div class="case-study-grid">
-          <article class="process-step"><span>01</span><h3>Structure</h3><p>Organize campaign and media information so visitors can scan quickly.</p></article>
-          <article class="process-step"><span>02</span><h3>Content</h3><p>Support clear service communication across outdoor advertising audiences.</p></article>
-          <article class="process-step"><span>03</span><h3>CMS</h3><p>Keep website content maintainable for ongoing updates after launch.</p></article>
+          <article class="process-step glass-panel reveal-on-scroll"><span>01</span><h3>Information architecture</h3><p>Organized campaign education, search paths, regions, blog content, FAQ, and contact flows into a scannable journey.</p></article>
+          <article class="process-step glass-panel reveal-on-scroll"><span>02</span><h3>Visual design</h3><p>Balanced bold billboard energy with a clean website structure, strong CTAs, and repeatable page sections.</p></article>
+          <article class="process-step glass-panel reveal-on-scroll"><span>03</span><h3>CMS-ready content</h3><p>Structured sections so the site can keep growing with market pages, media categories, articles, and campaign updates.</p></article>
         </div>
       </section>
     </main>
     <footer class="footer"><p>© 2026 Xin Mei. Digital product portfolio.</p><a href="../index.html#work">Back to projects</a></footer>
-    <script src="../case-study.js"></script>
+    <script src="../case-study.js?v=firstboard-bento-20260924"></script>
   </body>
 </html>
