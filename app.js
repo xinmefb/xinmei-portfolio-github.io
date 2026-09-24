@@ -1,5 +1,18 @@
 (function () {
   const defaults = window.PORTFOLIO_DATA || { contact: {}, projects: [] };
+  const savedTheme = localStorage.getItem("xm-theme");
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  function setTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("xm-theme", theme);
+    const toggle = document.querySelector("[data-theme-toggle]");
+    if (toggle) {
+      toggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+    }
+  }
+
+  setTheme(savedTheme || (prefersDark ? "dark" : "light"));
 
   async function getData() {
     const response = await fetch("content/portfolio.json", { cache: "no-store" });
@@ -60,7 +73,35 @@
     }
   }
 
+  function bindThemeToggle() {
+    const toggle = document.querySelector("[data-theme-toggle]");
+    if (!toggle) return;
+    toggle.addEventListener("click", () => {
+      const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+      setTheme(current === "dark" ? "light" : "dark");
+    });
+  }
+
+  function bindSkillTabs() {
+    const root = document.querySelector("[data-skill-tabs]");
+    if (!root) return;
+    const tabs = root.querySelectorAll("[data-skill-tab]");
+    const panels = root.querySelectorAll("[data-skill-panel]");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-skill-tab");
+        tabs.forEach((item) => item.classList.toggle("is-active", item === tab));
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.getAttribute("data-skill-panel") === target);
+        });
+      });
+    });
+  }
+
   window.XMPortfolio = { defaults, getData };
+  bindThemeToggle();
+  bindSkillTabs();
   getData()
     .then((data) => {
       renderProjects(data);

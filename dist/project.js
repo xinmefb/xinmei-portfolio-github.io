@@ -18,7 +18,7 @@
   function renderMissing() {
     document.querySelector("#project-title").textContent = "Project not found";
     document.querySelector("#project-description").textContent = "Return to the portfolio and choose a project from the list.";
-    document.querySelector("#project-detail-actions").innerHTML = '<a class="button primary" href="index.html#projects">Back to projects</a>';
+    document.querySelector("#project-detail-actions").innerHTML = '<a class="button primary" href="index.html#work">Back to projects</a>';
     document.querySelector("#project-detail-body").innerHTML = "";
   }
 
@@ -27,7 +27,7 @@
     document.querySelector("#project-title").textContent = project.title;
     document.querySelector("#project-description").textContent = project.description || "";
 
-    const actions = [`<a class="button primary" href="index.html#projects">Back to projects</a>`];
+    const actions = [`<a class="button primary" href="index.html#work">Back to projects</a>`];
     if (project.url) {
       actions.push(`<a class="button secondary" href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.action || "Visit")}</a>`);
     }
